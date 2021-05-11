@@ -1,6 +1,6 @@
 import django
 import os
-
+assets\src\app\app\settings.py
 from dotenv import load_dotenv
 from github import Github
 import github
