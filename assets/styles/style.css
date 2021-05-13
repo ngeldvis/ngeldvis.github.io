@@ -291,11 +291,11 @@ a, a:visited, a:hover {
     margin-bottom: 15px;
 }
 
-ul.tag-list {
+ul.topic-list {
     padding: 0;
 }
 
-ul.tag-list li {
+ul.topic-list li {
     display: inline-block;
     float: left;
     list-style: none;
@@ -310,7 +310,7 @@ ul.tag-list li {
     overflow: hidden;
 }
 
-ul.tag-list li:not(:last-of-type) {
+ul.topic-list li:not(:last-of-type) {
     margin-right: 15px;
 }
 
