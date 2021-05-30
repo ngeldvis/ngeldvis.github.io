@@ -5,6 +5,10 @@ $(document).ready(function() {
         type: 'GET',
         data: {},
         success: (data) => {
+            if(data == '') {
+                console.log('error fetching repositories');
+                return;
+            }
             projects = JSON.parse(data);
             for(var i = 0; i < projects.length; i++) {
                 project = projects[i];

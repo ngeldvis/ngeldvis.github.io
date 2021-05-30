@@ -20,8 +20,6 @@ def home():
 
 load_dotenv()
 
-# app = Flask(__name__)
-
 access_token = os.getenv('TOKEN')
 headers = {"Authorization": "token " + access_token}
 g = Github(access_token)
@@ -80,20 +78,24 @@ def send_projects() -> str:
     }
     '''
 
-    result = run_query(query)['data']['user']['pinnedItems']['nodes']
+    try:
+        result = run_query(query)['data']['user']['pinnedItems']['nodes']
+        repos = []
+        for repo in result:
+            repos.append(repo['name'])
 
-    repos = []
-    for repo in result:
-        repos.append(repo['name'])
+        info = []
+        for repo in repos:
+            desc = get_desc(g, repo)
+            topics = get_topics(g, repo)
+            url = get_repo_url(g, repo)
+            info.append({'name': repo, 'desc': desc, 'url': url, 'topics': topics})
 
-    info = []
-    for repo in repos:
-        desc = get_desc(g, repo)
-        topics = get_topics(g, repo)
-        url = get_repo_url(g, repo)
-        info.append({'name': repo, 'desc': desc, 'url': url, 'topics': topics})
+        return json.dumps(info)
 
-    return json.dumps(info)
+    except:
+        return ''
+
 
 
 
