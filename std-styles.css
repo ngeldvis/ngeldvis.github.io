@@ -1,0 +1,48 @@
+/* Flex Boxes */
+
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Grids */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 840px) {
+    .grid3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid3 {
+        grid-template-columns: 1fr
+    }
+}

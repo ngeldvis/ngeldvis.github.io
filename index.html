@@ -1,173 +1,185 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nigel Davis, a second-year Computer Science student at the University of Guelph.">
-    <title>Nigel Davis</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/a9df6eb2e8.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/index.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="landing">
-        <div class="landing-bg"></div>
-        <!-- <nav>
-          <div class="header-links">
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a>Resume</a>
-            <a href="contact.html">Contact</a>
+<head>
+
+  <title>Nigel Davis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans">
+
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navigation conatiner">
+      <div class="nav-content">
+        <a class="header-logo" href="">Nigel Davis</a>
+        <div class="header-links hide-on-mobile">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Projects</a>
+          <a href="">Resume</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="toggle hide-on-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class=" message-banner">
+        Currently seeking work opportunities for summer and fall 2021
+    </div> -->
+  </header>
+
+  <!-- About Me -->
+
+  <section class="about">
+
+    <div class="container">
+      <h2>About Me</h2>
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+
+  <section class="projects">
+
+    <div class="container">
+
+      <h2>Projects</h2>
+      <div class="project-grid grid3">
+
+        <!-- 2048 -->
+        <div class="project">
+          <div>
+            <img class="project-img" src="sample.jpg">
           </div>
-        </nav> -->
-        <div class="header-center">
-          <h1 id="name">Nigel Davis</h1>
-          <div class='header-icons'>
-            <a href="mailto:ngeldvis@gmail.com">Email</a>
-            <a href="https://www.github.com/ngeldvis" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/nigel-davis-4b70531b9/" target="_blank">Linkedin</a>
-            <a href="assets/resume.pdf" target="_blank">Resume</a>
-            <!-- <a href="https://www.instagram.com/ngeldvis" target="_blank"> Instagram</a> -->
+          <div class="project-text">
+            <h3>2048</h3>
+            <p>Simple 2048 game recreation made in Python using pygame</p>
+            <ul class="project-tools">
+              <li>Python</li>
+              <li>Pygame</li>
+            </ul>
+            <div class="project-button flex">
+              <a class="b7" href="https://www.github.com/ngeldvis/2048">View on GitHub</a>
+            </div>
           </div>
         </div>
-        <!-- <span class="location-tag">
-          <i class="fas fa-map-marker-alt"></i>
-          Venice, Italy
-        </span> -->
-      </div>
-    </header>
-    <section class="main-section">
-      <div class="wrap-text about section">
-        <h2 class="section-title">About Me</h2>
-        <p>
-          My name is Nigel Davis. I am a second-year student at the University of Guelph studying Computer Science with
-          a minor in Mathematics. I have been interested in technology all my life and excited to start my career in 
-          this field.
-        </p>
-        <p>
-          Feel free to reach out to me at any time at 
-            <a class="link" href="mailto:ngeldvis@gmail.com">ngeldvis@gmail.com</a>.
-        </p>
-      </div>
-      <div class="wrap-text skills section">
-        <h2 class="section-title">My Skill Set</h2>
-        <div class="container">
-          <img class="skill-img" src="assets/images/c.png" alt="C (programming language)">
-          <img class="skill-img" src="assets/images/python.png" alt="Python">
-          <img class="skill-img" src="assets/images/java.png" alt="Java">
-          <img class="skill-img" src="assets/images/git.png" alt="Git">
-          <img class="skill-img" src="assets/images/linux.png" alt="Linux">
+
+        <!-- Amazon Price Tracker -->
+        <div class="project">
+          <div>
+            <img class="project-img" src="sample.jpg">
+          </div>
+          <div class="project-text">
+            <h3>Amazon Price Tracker</h3>
+            <p>A python script that reads information from an Amazon wishlist and sends a notification by email if a specific item drops below a specific price specified under the items comments</p>
+            <ul class="project-tools">
+              <li>Python</li>
+              <li>Selenium</li>
+              <li>Pandas</li>
+            </ul>
+            <div class="project-button flex">
+              <a class="b7" href="https://www.github.com/ngeldvis/AmazonPriceTracker">View on GitHub</a>
+            </div>
+          </div>
         </div>
-        <p>
-          I have experience with programming languages such as C, Python, and Java. More recently, I 
-          have been expanding my skill set by learning basic web development using HTML, CSS, and Javascript.
-        </p>
-        <p>
-          I am a quick learner and always eager to learn new skills. In the future, I'm hoping to broaden my knowledge of common programming languages like C#, C++, and Go as 
-          well as learning new web technologies such as Django, React, and Express.
-        </p>
-      </div>
-      <div class="wrap-text projects section">
-        <h2 class="section-title">Projects</h2>
-        <ul class="project-list" style="list-style-type: none; padding: 0;">
-          <li class="project">
-            <div class="list-item">
-              <img src="assets/images/2048.png" alt="2048">
-              <div class="list-desc">
-                <h3>2048</h3>
-                <p>Simple 2048 game recreation made in Python using pygame.</p>
-                <a href="https://github.com/ngeldvis/2048" target="_blank" class="repo-button" type="button">
-                  View on GitHub
-                </a>
-                <ul class="tag-list">
-                  <li>game</li>
-                  <li>python</li>
-                  <li>pygame</li>
-                  <li>2048</li>
-                  <li>2048 game</li>
-                </ul> 
-              </div>
+
+        <!-- No Notif Counter -->
+        <div class="project">
+          <div>
+            <img class="project-img" src="sample.jpg">
+          </div>
+          <div class="project-text">
+            <h3>No Notif Counter</h3>
+            <p>Chrome extension to hide the notification counter on websites like Facebook and YouTube from the title bar</p>
+            <ul class="project-tools">
+              <li>JavaScipt</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Google Chrome API</li>
+            </ul>
+            <div class="project-button flex">
+              <a class="b7" href="https://www.github.com/ngeldvis/NoNotifCounter">View on GitHub</a>
             </div>
-          </li>
-          <li class="project">
-            <div class="list-item">
-              <img src="assets/images/AmazonPriceTracker.png" alt="AmazonPriceTracker">
-              <div class="list-desc">
-                <h3>Amazon Price Tracker</h3>
-                <p>A python script that reads information from an Amazon wishlist and sends a notification by email if a specific item drops below a specific price specified under the items comments.</p>
-                <a href="https://github.com/ngeldvis/AmazonPriceTracker" target="_blank" class="repo-button" type="button">
-                  View on GitHub
-                </a>
-                <div>
-                  <ul class="tag-list">
-                    <li>tracker</li>
-                    <li>amazon</li>
-                    <li>selenium</li>
-                    <li>pandas</li>
-                    <li>wishlist</li>
-                    <li>webscrapping</li>
-                    <li>webcrawling</li>
-                  </ul>   
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="project">
-            <div class="list-item">
-              <img src="assets/images/PatternRepeater.png" alt="PatternRepeater">
-              <div class="list-desc">
-                <h3>Pattern Repeater</h3>
-                <p>a program that takes a photo (pattern) and repeats it over specific dimensions to create a larger photo.</p>
-                <a href="https://github.com/ngeldvis/PatternRepeater" target="_blank" class="repo-button" type="button">
-                  View on GitHub
-                </a>
-                <div>
-                  <ul class="tag-list">
-                    <li>python</li>
-                    <li>opencv</li>
-                    <li>pattern</li>
-                    <li>opencv python</li>
-                    <li>pattern filler</li>
-                    <li>pattern extender</li>
-                    <li>pattern repeater</li>
-                  </ul>   
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>  
-        
-        <!-- <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt lobortis quam quis maximus. Phasellus venenatis tristique augue, vitae consequat lacus imperdiet dapibus. Nullam nibh nulla, porttitor a felis non, eleifend luctus magna. Nam maximus rhoncus lacinia. Vestibulum tellus mi, maximus sit amet orci sit amet, laoreet hendrerit metus. Sed laoreet nunc vitae est commodo, at pharetra orci scelerisque. Vestibulum id ex a lectus scelerisque dignissim quis nec ligula.
-        </p> -->
-        <div class="container">
-          <a href="https://www.github.com/ngeldvis" target="_blank" class="button" type="button">See All Projects</a>
+          </div>
         </div>
       </div>
-    </section>
-    <svg class="bg-svg svg" preserveAspectRatio="none" viewBox="0 0 100 100" height="1000" width="100%">
-      <path d="M 0,0 L 0,80 L 100,55 L 100,0 Z" fill="#fff" stroke="none"></path>
-    </svg>
-    <section class="contact">
-      <!-- <svg class="svg" preserveAspectRatio="none" viewBox="0 0 100 100" height="75" width="100%">
-        <path d="M 0,0 L 50,100 L 100,0 Z" fill="#ddd" stroke="none"></path>
-      </svg> -->
-      <!-- <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="150" width="100%">
-        <path d="M 0,0 L 100,100 L 100,0 Z" fill="#fff" stroke="white"></path>
-      </svg> -->
-      <!-- <svg class="angle-svg" preserveAspectRatio="none" viewBox="0 0 100 102" height="150" width="100%">
-        <path d="M 0,0 L 0,100 L 100,0 Z" fill="#fff" stroke="white"></path>
-      </svg> -->
-    </section>
+          
+      
+      <div class="flex-center">
+          <a href="https://github.com/ngeldvis?tab=repositories" class="b8">View all projects</a>
+      </div>
 
-    <footer>
-      <!-- <h1 class="email-header">ngeldvis@gmail.com</h1> -->
-      <a href="mailto:ngeldvis@gmail.com" class="email-header">ngeldvis@gmail.com</h1>
-    </footer>
+    </div>
 
-    
+  </section>
 
-  </body>
+  <!-- Background -->
+
+  <section class="background">
+
+    <div class="container">
+      <h2>Background</h2>
+      <div class="background-grid">
+
+        <!-- Ecoation - Developer -->
+        <div class="background-icon">
+          <img src="ecoation.png" alt="ecoation">
+        </div>
+        <div class="flex-col">
+          <div class="background-header flex-row">
+            <h3>Software Development Engineer</h3>
+            <div class="background-date flex">June 2021 - December 2021</div>
+          </div>
+          <h4>Ecoation Innovative Solutions Inc.</h4>
+          <p>
+            This was my first experience in a tech role...
+          </p>
+          <!-- <div class="flex">
+            <a class="b7" href="">See Blog Post</a>
+          </div> -->
+        </div>
+
+        <!-- University of Guelph -->
+        <div class="background-icon">
+          <img src="uog.svg" alt="uog">
+        </div>
+        <div class="flex-col">
+          <div class="background-header flex-row">
+            <h3>Started Bachelor of Computing, Computer Science </h3>
+            <div class="background-date flex">September 2019</div>
+          </div>
+          <h4>University of Guelph</h4>
+          <p>
+            It all started...
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+
+    <div class="container">
+      <div class="footer-logo">
+        <h2>Nigel Davis</h2>
+      </div>
+      <div class="footer-links">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Projects</a>
+        <a href="">Resume</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
 </html>
