@@ -1,0 +1,66 @@
+.projects {
+  background: #f5f6f7;
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 24px 0;
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background-color: #ffffff;
+      border: #dadce0 solid 1px;
+      border-radius: 8px;
+
+      &:nth-child(even) img {
+        background: #ddd; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      }
+      
+      &:nth-child(odd) img {
+        background: #ddd; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+      }
+
+      &-text {
+        padding: 1.625rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: 1rem;
+      }
+
+      &-button {
+        height: 100%;
+      }
+
+      &-button a {
+        margin-top: auto;
+      }
+      
+      &-img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+      }
+      
+      &-tools {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        font-size: 0.875rem;
+      }
+      
+      &-tools li {
+        margin: 0 0.875rem 0.875rem 0;
+        padding: 0.125rem 1rem;
+        display: inline-block;
+        background-color: #ef6c0814;
+        border-radius: 4px;
+        line-height: 1.25rem;
+        color: #ef6c08;
+      }
+    }
+  }
+}

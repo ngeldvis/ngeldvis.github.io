@@ -1,0 +1,167 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 84.25rem;
+}
+
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: #dadce0 solid 1px;
+}
+
+.header .navigation-menu {
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.header .navigation-menu .header-logo {
+  font-size: 1.125em;
+  padding: 0.3125rem 1.125rem;
+  font-weight: bold;
+}
+
+.header .navigation-menu .header-links {
+  display: flex;
+}
+
+.header .navigation-menu .header-links a {
+  padding: 0 18px;
+  position: relative;
+  line-height: 3.6rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #425065;
+  transition: color .2s;
+}
+
+.header .navigation-menu .header-links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  opacity: 0;
+  background-color: #293241;
+  border-radius: 1px;
+  transition: opacity .2s linear;
+}
+
+.header .navigation-menu .header-links a:hover {
+  color: #293241;
+}
+
+.header .navigation-menu .header-links a:hover::before {
+  opacity: 1;
+}
+
+.projects {
+  background: #f5f6f7;
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.projects .project-grid .project {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: #dadce0 solid 1px;
+  border-radius: 8px;
+}
+
+.projects .project-grid .project:nth-child(even) img {
+  background: #ddd;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.projects .project-grid .project:nth-child(odd) img {
+  background: #ddd;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.projects .project-grid .project-text {
+  padding: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.projects .project-grid .project-button {
+  height: 100%;
+}
+
+.projects .project-grid .project-button a {
+  margin-top: auto;
+}
+
+.projects .project-grid .project-img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.projects .project-grid .project-tools {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.875rem;
+}
+
+.projects .project-grid .project-tools li {
+  margin: 0 0.875rem 0.875rem 0;
+  padding: 0.125rem 1rem;
+  display: inline-block;
+  background-color: #ef6c0814;
+  border-radius: 4px;
+  line-height: 1.25rem;
+  color: #ef6c08;
+}
+/*# sourceMappingURL=style.css.map */
