@@ -101,6 +101,7 @@ a, a:visited, a:hover {
 
 .header-center {
     position: absolute;
+    width: 80vw;
     z-index: 2;
     top: 50%;
     left: 50%;
