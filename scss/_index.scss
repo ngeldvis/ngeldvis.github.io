@@ -1,0 +1,81 @@
+@import "variables";
+
+.project-grid {
+    padding-top: $padding-regular;
+    display: grid;
+    gap: $padding-regular;
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up(medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-card {
+        border-radius: $border-radius-regular;
+        border: 1px solid #dadce0;
+        overflow: hidden;
+
+        &:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        &:nth-child(even) .project-image {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+    
+        &:nth-child(odd) .project-image {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        }
+    }
+
+    .project-image {
+        overflow: hidden;
+
+        img {
+            display: block;
+            transition: transform 0.3s ease-out;
+        }
+    }
+
+    .project-content {
+        padding: $padding-medium;
+        display: flex;
+        flex-direction: column;
+        gap: $padding-small;
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        font-size: $h3-font-size;
+
+        a {
+            color: #777;
+            transition: color 0.2s ease-out;
+
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+
+    .project-stack {
+        display: flex;
+        gap: $padding-small;
+        flex-wrap: wrap;
+
+        div {
+            background-color: orangered;
+            opacity: 0.7;
+            color: white;
+            font-family: $code-font;
+            font-size: $font-size-small;
+            padding: 0 $padding-smaller;
+            border-radius: $border-radius-small;
+        }
+    }
+}

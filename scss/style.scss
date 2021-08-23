@@ -1,5 +1,7 @@
 @import "variables";
+@import "mixins";
 @import "globals";
-@import "navbar";
-@import "about";
-@import "projects"
+
+@import "header";
+@import "visibility";
+@import "index";
