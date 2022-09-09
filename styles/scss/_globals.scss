@@ -1,0 +1,114 @@
+@import "variables";
+@import "mixins";
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: $header-height 0 0 0;
+  font-family: $default-text-font;
+  font-size: $font-size-regular;
+  background-color: $body-color;
+  color: $default-text-color;
+  line-height: 1.6;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  font-family: $heading-font;
+  margin: 0;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  padding-bottom: $spacing-regular;
+  color: $secondary-color;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.code {
+  font-family: $monospace-font;
+  font-size: $font-size-small;
+  border-radius: $border-radius-smaller;
+}
+
+.container {
+  padding: $spacing-large;
+  
+  @include breakpoint-up(large) {
+    max-width: $container-width;
+    padding: $spacing-large 0;
+    margin: auto;
+  }
+
+  &.header-container {
+    padding: 0;
+
+    @include breakpoint-down(large) {
+      padding: 0 $spacing-large
+    }
+  }
+}
+
+// Visibility
+.hide-on-mobile {
+  @include breakpoint-down(large) {
+    display: none;
+  }
+}
+
+.hide-on-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

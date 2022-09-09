@@ -1,0 +1,53 @@
+// Measurements
+$header-height: 48px;
+$container-width: 976px;
+
+$spacing-larger: 36px;
+$spacing-large: 32px;
+$spacing-regular: 24px;
+$spacing-medium: 16px;
+$spacing-small: 12px;
+$spacing-smaller: 8px;
+
+$border-radius-regular: 8px;
+$border-radius-small: 5px;
+$border-radius-smaller: 1px;
+
+// Colors
+$primary-color: #031059;
+$alt-primary-color: #2C3D73;
+
+$secondary-color: #F24405;
+$alt-secondary-color: #F2836B;
+
+$highlight-color: #fff;
+$alt-highlight-color: #F7F7F7;
+
+$heading-color: $primary-color;
+$default-text-color: $alt-primary-color;
+
+$body-color: #fff;
+
+// Fonts and Text Sizes
+$heading-font: "Roboto Slab", sans-serif;
+$default-text-font: 'Roboto', sans-serif;
+$monospace-font: 'Roboto Mono', sans-serif;
+
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$font-size-larger: 48px;
+$font-size-large: 36px;
+$font-size-medium: 32px;
+$font-size-regular: 16px;
+$font-size-small: 12px;
+$font-size-smaller: 10px;
+
+$h1-font-size: $font-size-large;
+$h2-font-size: $font-size-medium;
+$h3-font-size: 20px;
+
+// Z Indexes
+$z-tooltip: 10;
+$z-fixed: 100;

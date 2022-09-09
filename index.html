@@ -10,11 +10,14 @@
 
   <title>Nigel Davis | Portfolio</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles/css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
 
   <script src="https://kit.fontawesome.com/a9df6eb2e8.js" crossorigin="anonymous"></script>
 
@@ -28,11 +31,11 @@
       
       <nav class="header-nav">
         <div class="header-links hide-on-mobile h-100">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Projects</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
           <a href="">Resume</a>
-          <a href="">Contact</a>
         </div>
         
         <div class="header-menu-toggle hide-on-desktop h-100">
@@ -44,16 +47,95 @@
   </header>
 
   <main>
+
+    <section id="about">
+      <div class="container">
+
+        <h1>About</h1>
+        <p>Hi, my name is Nigel and I am a 4th year Computer Science student at the University of Guelph. Being in enrolled in the co-op program, I have had the priviledge of working at various companies demonstrating a wide variety of technical knowledge and skills.</p>
+
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+
+        <h1>Experience</h1>
+
+        <div class="experience-grid">
+
+          <!-- <div class="experience-item">
+            <div class="experience-icon">
+              <img src="assets/images/wave.jpg" alt="wave">
+            </div>
+            <div class="experience-details flex-col">
+              <div class="experience-header">
+                <h3>Software Developer</h3>
+                <div class="experience-date flex">January 2023 - April 2023</div>
+              </div>
+              <div class="experience-loc">Wave HQ</div>
+            </div>
+          </div> -->
+
+          <div class="experience-item">
+            <div class="experience-icon">
+              <img src="assets/images/tulip.jpg" alt="tulip">
+            </div>
+            <div class="experience-details flex-col">
+              <div class="experience-header">
+                <h3>Software Developer</h3>
+                <div class="experience-date flex">May 2022 - August 2022</div>
+              </div>
+              <div class="experience-loc">Tulip Retail</div>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-icon">
+              <img src="assets/images/ecoation.jpg" alt="ecoation" style="width: 75px; margin-left: -12.5px;">
+            </div>
+            <div class="experience-details flex-col">
+              <div class="experience-header">
+                <h3>Software Development Engineer</h3>
+                <div class="experience-date flex">June 2021 - December 2021</div>
+              </div>
+              <div class="experience-loc">Ecoation Innovative Solutions Inc.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+
+        <h1>Education</h1>
+
+        <div class="experience-item">
+          <div class="experience-icon">
+            <img src="assets/images/uofg.jpg" alt="uog">
+          </div>
+          <div class="experience-details flex-col">
+            <div class="experience-header">
+              <h3>Bachelor of Computing, Computer Science </h3>
+              <div class="experience-date flex">September 2019 - Present</div>
+            </div>
+            <div class="experience-loc">University of Guelph</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
     <section id="projects">
       <div class="container">
 
         <h1>Projects</h1>
+
         <div class="project-grid">
 
           <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/2048-project.jpg">
-            </div>
             <div class="project-content">
               <div class="project-header">
                 <h3>2048</h3>
@@ -70,29 +152,22 @@
           </div>
 
           <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/apt-project.jpg">
-            </div>
             <div class="project-content">
               <div class="project-header">
-                <h3>Amazon Price Tracker</h3>
-                <a href="https://github.com/ngeldvis/Amazon-Price-Tracker">
+                <h3>Spendy</h3>
+                <a href="https://github.com/Harsh-Topi/spendy">
                   <i class="fab fa-github fa-lg"></i>
                 </a>
               </div>
-              <p>A web scraper that reads information from an Amazon wishlist and sends an email if any item drops below a specific price</p>
+              <p>A chrome extension that automatically tracks purchases and budgets, alerting users if they go over their spending limits</p>
               <div class="project-stack">
-                <div>Python</div>
-                <div>Selenium</div>
-                <div>Panadas</div>
+                <div>JavaScript</div>
+                <div>React</div>
               </div>
             </div>
           </div>
 
           <div class="project-card">
-            <div class="project-image">
-              <img src="assets/images/gpx-project.jpg">
-            </div>
             <div class="project-content">
               <div class="project-header">
                 <h3>GPX Data Viewer</h3>
@@ -111,164 +186,21 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <section id="experience">
-      <div class="container">
-        <h1>Experience</h1>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <h1>Skills</h1>
-      </div>
-    </section>
   </main>
 
-  <footer></footer>
-
-  <div class="scaff"></div>
-
-  <!-- About Me -->
-
-  <!-- <section class="about">
-
-    <div class="container">
-      <h2>About Me</h2>
-    </div>
-
-  </section> -->
-
-  <!-- Projects -->
-
-  <!-- <section class="projects">
-
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-  
-        <div class="project">
-          <div>
-            <img class="project-img" src="/assets/images/sample.jpg">
-          </div>
-          <div class="project-text">
-            <h3>2048</h3>
-            <p>Simple 2048 game recreation made in Python using pygame</p>
-            <div class="project-tools">
-              <span>Python</span>
-              <span>Pygame</span>
-            </div>
-            <div class="project-button-container">
-              <a class="b7" href="https://www.github.com/ngeldvis/2048">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="project">
-          <div>
-            <img class="project-img" src="/assets/images/sample.jpg">
-          </div>
-          <div class="project-text">
-            <h3>Amazon Price Tracker</h3>
-            <p>A python script that reads information from an Amazon wishlist and sends a notification by email if a specific item drops below a specific price specified under the items comments</p>
-            <div class="project-tools">
-              <span>Python</span>
-              <span>Selenium</span>
-              <span>Pandas</span>
-            </div>
-            <div class="project-button-container">
-              <a class="b7" href="https://www.github.com/ngeldvis/AmazonPriceTracker">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="project">
-          <div>
-            <img class="project-img" src="/assets/images/sample.jpg">
-          </div>
-          <div class="project-text">
-            <h3>No Notif Counter</h3>
-            <p>Chrome extension to hide the notification counter on websites like Facebook and YouTube from the title bar</p>
-            <div class="project-tools">
-              <span>JavaScript</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Google Chrome API</span>
-            </div>
-            <div class="project-button-container">
-              <a class="b7" href="https://www.github.com/ngeldvis/NoNotifCounter">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-          
-      
-      <div class="flex-center">
-          <a href="https://github.com/ngeldvis?tab=repositories" class="b8">View all projects</a>
-      </div>
-    </div>
-
-  </section> -->
-
-  <!-- Background -->
-
-  <!-- <section class="background">
-
-    <div class="container">
-      <h2>Background</h2>
-      <div class="background-grid">
-
-        <div class="background-icon">
-          <img src="ecoation.png" alt="ecoation">
-        </div>
-        <div class="flex-col">
-          <div class="background-header flex-row">
-            <h3>Software Development Engineer</h3>
-            <div class="background-date flex">June 2021 - December 2021</div>
-          </div>
-          <h4>Ecoation Innovative Solutions Inc.</h4>
-          <p>
-            This was my first experience in a tech role...
-          </p>
-        </div>
-
-        <div class="background-icon">
-          <img src="uog.svg" alt="uog">
-        </div>
-        <div class="flex-col">
-          <div class="background-header flex-row">
-            <h3>Started Bachelor of Computing, Computer Science </h3>
-            <div class="background-date flex">September 2019</div>
-          </div>
-          <h4>University of Guelph</h4>
-          <p>
-            It all started...
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </section> -->
-
-  <!-- <footer class="footer">
-
+  <footer class="footer">
     <div class="container">
       <div class="footer-logo">
         <h2>Nigel Davis</h2>
       </div>
-      <div class="footer-links">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Resume</a>
-        <a href="">Contact</a>
-      </div>
+      <div class="code"><a href="mailto:nigel@nigeldavis.com">@ 2022 Nigel Davis / nigel@nigeldavis.com</a></div>
     </div>
-
-  </footer> -->
+  </footer>
 
 </body>
 </html>

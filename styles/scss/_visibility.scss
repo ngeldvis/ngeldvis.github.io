@@ -1,0 +1,13 @@
+@import "variables";
+
+.hide-on-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-on-desktop {
+    @include breakpoint-up(medium) {
+        display: none;
+    }
+}

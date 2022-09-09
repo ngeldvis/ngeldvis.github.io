@@ -1,0 +1,49 @@
+@import "variables";
+
+.experience {
+
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: $spacing-regular;
+    }
+
+    &-item {
+        width: 100%;
+        display: flex;
+    }
+
+    &-header {
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+        }
+    }
+
+    &-details {
+        flex-grow: 1;
+    }
+
+    &-date {
+        font-size: $font-size-small;
+        font-family: $monospace-font;
+        font-weight: $font-weight-bold;
+    }
+
+    &-icon {
+        flex: 0 0 80px;
+
+        img {
+            width: 50px;
+            margin-right: $spacing-regular;
+        }
+    }
+
+    &-loc {
+        // margin-top: $spacing-smaller;
+    }
+}
