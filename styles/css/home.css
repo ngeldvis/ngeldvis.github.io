@@ -114,9 +114,10 @@ img {
 
 .button {
   display: inline-block;
-  padding: 4px 12px;
-  background-color: #031059;
-  color: white;
+  margin-top: 12px;
+  padding: 2px 12px;
+  border: 2px solid #031059;
+  color: #031059;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -125,7 +126,8 @@ img {
 }
 
 .button:hover {
-  background-color: #2C3D73;
+  background-color: #031059;
+  color: white;
 }
 
 @media (max-width: 1024px) {
