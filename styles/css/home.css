@@ -112,6 +112,22 @@ img {
   }
 }
 
+.button {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #031059;
+  color: white;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background-color: #2C3D73;
+}
+
 @media (max-width: 1024px) {
   .hide-on-mobile {
     display: none;
@@ -394,4 +410,4 @@ img {
 .footer {
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */

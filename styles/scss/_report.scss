@@ -1,0 +1,39 @@
+@import "variables";
+
+p:not(:last-of-type) {
+    margin-bottom: $spacing-small;
+} 
+
+.title {
+    padding-bottom: $spacing-smaller;
+}
+
+.date {
+    margin-bottom: 64px;
+    svg {
+        margin-right: $spacing-small;
+    }
+}
+
+.goals-list {
+    li {
+        &::marker {
+            font-size: $h3-font-size;
+            font-weight: 800;
+            font-family: $heading-font;
+        }
+        &:not(:last-child) {
+            padding-bottom: $spacing-regular;
+        }
+    }
+}
+
+.list-img {
+    max-width: 250px;
+}
+
+#tulip-logo {
+    max-width: 300px;
+    padding: $spacing-regular 0;
+    object-fit: contain;
+}
