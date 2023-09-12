@@ -82,7 +82,13 @@ img {
   border-radius: $border-radius-smaller;
 }
 
+.caption {
+  font-size: 11px;
+}
+
 .container {
+  display: flex;
+  flex-direction: column;
   padding: $spacing-large;
   
   @include breakpoint-up(large) {

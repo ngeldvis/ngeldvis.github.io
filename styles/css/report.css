@@ -1,6 +1,5 @@
 *, ::before, ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -65,23 +64,13 @@ img {
 }
 
 .flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .code {
@@ -90,10 +79,15 @@ img {
   border-radius: 1px;
 }
 
-.container {
-  padding: 32px;
+.caption {
+  font-size: 11px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
 @media (min-width: 1025px) {
   .container {
     max-width: 976px;
@@ -101,11 +95,9 @@ img {
     margin: auto;
   }
 }
-
 .container.header-container {
   padding: 0;
 }
-
 @media (max-width: 1024px) {
   .container.header-container {
     padding: 0 32px;
@@ -121,10 +113,8 @@ img {
   border-radius: 12px;
   position: relative;
   overflow: hidden;
-  -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
-
 .button:hover {
   background-color: #031059;
   color: white;
@@ -152,56 +142,34 @@ img {
   background-color: white;
   border-bottom: 1px solid #dadce0;
 }
-
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .header-logo {
   font-family: "Roboto Slab", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 16px;
   font-weight: 600;
   margin-left: -16px;
 }
-
 .header-links {
   margin-right: -16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header-links a {
   font-family: "Roboto Slab", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   padding: 0 16px;
   height: 100%;
   font-weight: 600;
   color: #031059;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-
 .header-links a::before {
   content: "";
   display: block;
@@ -213,21 +181,14 @@ img {
   background-color: #F24405;
   border-radius: 1px;
   opacity: 0;
-  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-
 .header-links a:hover:before {
   opacity: 1;
 }
-
 .header-menu-toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 16px;
   font-size: 16px;
 }
@@ -257,11 +218,17 @@ p:not(:last-of-type) {
 }
 
 .date {
-  margin-bottom: 64px;
+  margin-bottom: 16px;
 }
-
 .date svg {
   margin-right: 12px;
+}
+
+.container .img-container {
+  align-self: center;
+  max-width: 500px;
+  border-radius: 5px;
+  margin-top: 32px;
 }
 
 .goals-list li::marker {
@@ -269,7 +236,6 @@ p:not(:last-of-type) {
   font-weight: 800;
   font-family: "Roboto Slab", sans-serif;
 }
-
 .goals-list li:not(:last-child) {
   padding-bottom: 24px;
 }
@@ -278,10 +244,9 @@ p:not(:last-of-type) {
   max-width: 250px;
 }
 
-#tulip-logo {
+#tulip-logo, #wave-logo {
   max-width: 300px;
   padding: 24px 0;
   -o-object-fit: contain;
      object-fit: contain;
-}
-/*# sourceMappingURL=report.css.map */
+}/*# sourceMappingURL=report.css.map */
